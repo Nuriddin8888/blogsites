@@ -96,15 +96,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-# SOCIALACCOUNT_PROVIDERS = {
-#     "google": {
-#         "APP": {
-#             "client_id": GOOGLE_CLIENT_ID,
-#             "secret": GOOGLE_CLIENT_SECRET,
-#             "key": "",
-#         }
-#     }
-# }
+SOCIALACCOUNT_PROVIDERS = {
+    "google": {
+        "APP": {
+            "client_id": GOOGLE_CLIENT_ID,
+            "secret": GOOGLE_CLIENT_SECRET,
+            "key": "",
+        }
+    }
+}
 
 
 # JAZZMIN_SETTINGS = {
