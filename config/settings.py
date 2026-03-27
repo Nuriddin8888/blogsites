@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-6^z*^o(l)md+cq8&o(a5ci8gx=b23d^d+5!+03zer(8*w4hgdl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "127.0.0.1",
@@ -178,6 +178,10 @@ SOCIALACCOUNT_LOGIN_ON_GET = True
 BOT_TOKEN = BOT_TOKEN
 CHAT_ID = CHAT_ID
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://blogsites-gc55.onrender.com"
+]
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
